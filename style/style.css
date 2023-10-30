@@ -1,0 +1,276 @@
+/* ============= GLOBAL STYLES ============= */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+.sub-title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 20px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer.bg-dark {
+    background-color: #262626 !important;
+}
+
+
+/* ============= HEADER STYLES ============= */
+#header1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../Images/pexels-neo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navbar.transparent-bg {
+    background: none !important;
+}
+
+.navbar-dark .navbar-nav.ml-auto .nav-link {
+    color: #ffffff;
+}
+
+.navbar-dark .navbar-nav.ml-auto .nav-link:hover,
+.navbar-dark .navbar-nav.ml-auto .nav-link:focus {
+    color: #cccccc;
+}
+
+.logo {
+    width: 140px;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: #ff004f;
+}
+
+/* ============= ABOUT SECTION STYLES ============= */
+#about {
+    padding: 80px 0;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.tab-titles {
+    display: flex;
+    justify-content: start;
+    margin: 20px 0 40px;
+    flex-wrap: wrap;
+}
+
+.tab-links {
+    margin: 0 20px 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+
+.tab-links::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+.tab-contents ul {
+    margin: 20px 0;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #b54769;
+    font-size: 14px;
+}
+
+/* ============= SERVICES SECTION STYLES ============= */
+#services {
+    padding: 30px 0;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div i {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list div:hover {
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+/* ============= PORTFOLIO SECTION STYLES ============= */
+#portfolio {
+    padding: 50px 0;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ============= BUTTON STYLES ============= */
+.btn.btn-primary {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.btn.btn-primary:hover {
+    background-color: #ff004f;
+    color: #2a2a2a;
+    border: 2px solid #2a2a2a;
+}
+
+
+/* Efecto para el botón */
+.btn-primary {
+    transition: background 0.5s, transform 0.5s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+}
+
+
+/* ============= MISCELLANEOUS STYLES ============= */
+.working-on-it {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.working-on-it h3 {
+    margin: 0;
+}
+
+/* ========== WEB DESIGN PAGE STYLES ========== */
+.custom-text-container {
+    background-color: #262626;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+/* ========== 3D DESIGN PAGE STYLES ========== */
+
+.images-wrapper {
+    display: flex; /* Esto hará que los hijos se muestren en línea horizontal. */
+    justify-content: center; /* Centra las imágenes horizontalmente. */
+    align-items: center; /* Centra las imágenes verticalmente, aunque no es estrictamente necesario si todas las imágenes tienen la misma altura. */
+    gap: 10px; /* Espacio entre las imágenes. */
+}
+
+.img3Dmodel {
+    width: 500px;
+    height: 600px;
+}

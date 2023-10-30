@@ -1,0 +1,52 @@
+// Header Styles
+#header1 {
+    width: 100%;
+    height: 100vh;
+    background: {
+        image: url("../Images/pexels-neo.jpg");
+        size: cover;
+        position: center;
+    }
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &.transparent-bg {
+        background: none !important;
+    }
+
+    .navbar-dark {
+        .navbar-nav.ml-auto {
+            .nav-link {
+                color: $white-color;
+
+                &:hover,
+                &:focus {
+                    color: #cccccc;
+                }
+            }
+        }
+    }
+}
+
+.logo {
+    width: 140px;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+
+    h1 {
+        font-size: 60px;
+        margin-top: 20px;
+
+        span {
+            color: $primary-color;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+// Button Styles
+.btn-primary {
+    background-color: #2a2a2a;
+    color: $white-color;
+    border: 2px solid $white-color;
+    padding: 10px 20px;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: $primary-color;
+        color: #2a2a2a;
+        border: 2px solid #2a2a2a;
+    }
+}

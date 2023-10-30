@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my personal portfolio. Here you can see my experience">
+    <meta name="description" content="personal porfolio">
+    <meta name="author" content="Kevin Skvor">
+    <title>Personal portfolio website</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="https://kit.fontawesome.com/462c7745a2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- ============= HEADER ============= -->
+    <header class="bg-dark" id="header1">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark container transparent-bg">
+            <a class="navbar-brand" href="#"><img src="../Images/logo.png" class="logo" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--===============WEB DESIGN============-->
+
+        <!-- Personal section -->
+        <div class="row mt-5 justify-content-center">
+            <div class="col-md-8 text-center custom-text-container">
+                <h1>Web Development Experience</h1>
+                <p>
+                    I undertook an intensive web development course at Coderhouse, where I was introduced to a wide
+                    range of tools and technologies essential for modern web design and development. During my time
+                    there, I gained hands-on experience with Figma, which is instrumental for UI/UX design. I also
+                    delved deep into the foundational languages of the web, including HTML and CSS, and learned how to
+                    enhance my styling techniques using SASS. In addition, the course equipped me with proficiency in
+                    Bootstrap, enabling me to develop responsive and mobile-first web pages efficiently. Furthermore, I
+                    became well-versed in version control, mastering both Git and GitHub, which are pivotal for team
+                    collaboration and code management. I'm excited to share that I'll be continuing my educational
+                    journey with Coderhouse by enrolling in their JavaScript course in the near future. This will
+                    certainly add another layer of depth to my web development skills and broaden my expertise.
+                </p>
+            </div>
+        </div>
+        <div class="button-container text-center">
+            <a href="https://www.coderhouse.com/?pipe_source=google&pipe_medium=cpc&pipe_campaign=0&gad_source=1&gclid=Cj0KCQjwqP2pBhDMARIsAJQ0CzpzPgvoUNTclT930GRUWEmBBc3bw1Us3Wsuj7vS93zEEkUVU4m8drQaAhhREALw_wcB"
+                target="_blank" class="btn btn-primary">
+                Open Coderhouse
+            </a>
+        </div>
+
+    </header>
+
+
+
+    <!--===============FOOTER================-->
+    <footer class="bg-dark text-light py-3">
+        <div class="container">
+            <div class="row">
+
+                <!-- Primera columna - Logo o nombre -->
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="text-uppercase">My Portfolio</h5>
+                    <p>This website is designed to show some of my skills.</p>
+                </div>
+
+                <!-- Segunda columna - Enlaces rápidos o navegación -->
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="text-uppercase">Pages</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html" class="text-light">Home</a></li>
+                        <li><a href="../pages/about.html" class="text-light">About</a></li>
+                        <li><a href="../pages/contact.html" class="text-light">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Tercera columna - Redes sociales -->
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="text-uppercase">Social Networks</h5>
+                    <a href="https://twitter.com/Kevin18041417" class="text-light mr-3"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/skvorkevin/" class="text-light"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- ============= SCRIPTS ============= -->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <!-- External Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
